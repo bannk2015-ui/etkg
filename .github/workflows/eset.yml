@@ -6,12 +6,12 @@ on:
   workflow_dispatch:
     inputs:
       account:
-        description: 'Number of Accounts to be generated (default = 0)'
+        description: 'Number of Accounts to be generated (default = 2)'
         required: false
         default: '0'
         type: string
       key:
-        description: 'Number of Keys to be generated (default = 1)'
+        description: 'Number of Keys to be generated (default =5)'
         required: false
         default: '1'
         type: string
@@ -38,7 +38,7 @@ on:
           - --small-business-key
         default: --key
       os:
-        description: 'Operating System of runner (Linux, macOS, Windows)'
+        description: 'Operating System of runner (Windows)'
         required: true
         type: choice
         options:
